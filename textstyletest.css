@@ -1,0 +1,354 @@
+h1 {
+    text-align: center;
+    font-weight: normal;
+    letter-spacing: 20px;
+    font-size: 3.5em;
+    font-family: monospace;
+    background-color: rgb(60, 60, 60);
+    color: white;
+    border: 5px solid black;
+    border-radius: 35px;
+    margin: calc(10%/5) calc(10%/1.5);
+    background-image: url(https://t4.ftcdn.net/jpg/02/40/93/69/360_F_240936998_2wBjelIOKw1vGKkfOpCjiA25waBAiLeb.jpg);
+    background-size: 4em;
+    background-blend-mode: darken;
+    text-shadow: 3px 4px 2px rgb(135, 135, 135);
+}
+
+.pokeball_icon {
+    width: 80px;
+    height: 80px;
+    margin: calc(10%/5) auto;
+    background-color: rgba(191, 191, 191, 0.5);
+    transition: background-color 1s, transform 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-image: url(https://img.pokemondb.net/sprites/items/poke-ball.png);
+    background-size: cover;
+}
+
+.pokeball_icon:hover {
+    background-color: rgba(255, 79, 79, 0.5);
+    transform: rotate(1turn);
+}
+
+details {
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-size: 1.1em;
+    border: 2px solid #666;
+    border-radius: 35px;
+    transition: transform .25s;
+    margin: 0.5em 1em;
+}
+
+details>summary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0.5em 0.5em 0;
+    padding: 1% 0 2% 0;
+}
+
+details:hover {
+    transform: translateY(.35em);
+    cursor: pointer;
+}
+
+button {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #555;
+    font-size: 1.2em;
+    border: 2px solid;
+    border-radius: 35px;
+    padding: 1em 2em;
+    transition: transform 0.25s, border-color .25s, box-shadow .25s, background-color .25s;
+}
+
+button:hover {
+    background-color: rgb(60, 60, 60);
+    border-color: rgb(30, 139, 73);
+    color: white;
+    box-shadow: 0 -0.5em 0.5em -0.4em rgb(30, 139, 73);
+    transform: translateY(.35em);
+    cursor: pointer;
+}
+
+button:nth-of-type(2):hover {
+    border-color: salmon;
+    box-shadow: 0 -0.5em 0.5em -0.4em salmon;
+}
+
+a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+button a {
+    text-decoration: none;
+    color: rgb(175, 175, 175);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+span {
+    text-decoration: underline;
+}
+
+h3 {
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-size: 1em;
+    text-align: right;
+}
+
+h2 {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #666;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+body {
+    background-color: #555555;
+    background-blend-mode: multiply;
+    background-image: url(https://www.shutterstock.com/image-vector/black-checkerboard-decorative-background-600nw-1312753919.jpg);
+}
+
+#fire {
+    color: rgb(255, 161, 151);
+    border: 2px solid salmon;
+    border-radius: 20px;
+    transition: box-shadow 0.25s, background-color 0.25s;
+    margin: calc(10%/5) calc(10%/4);
+}
+
+#fire:hover {
+    box-shadow: 0 0 1em 0.2em salmon;
+    background-color: rgb(99, 60, 56);
+}
+
+#grass {
+    color: rgb(114, 250, 150);
+    border: 2px solid rgb(114, 250, 150);
+    border-radius: 20px;
+    transition: box-shadow 0.25s, background-color 0.25s;
+    margin: calc(10%/5) calc(10%/4);
+}
+
+#grass:hover {
+    box-shadow: 0 0 1em 0.2em rgb(55, 185, 107);
+    background-color: rgb(61, 101, 71);
+}
+
+#water {
+    color: rgb(141, 171, 255);
+    border: 2px solid rgb(114, 150, 250);
+    border-radius: 20px;
+    transition: box-shadow 0.25s, background-color 0.25s;
+    margin: calc(10%/5) calc(10%/4);
+}
+
+#water:hover {
+    box-shadow: 0 0 1em 0.2em rgb(114, 150, 250);
+    background-color: rgb(62, 74, 109);
+}
+
+.dex_num {
+    color: #ff0;
+    text-align: center;
+}
+
+.sprite_box {
+    margin: calc(-10%/9) calc(10%/3);
+    position: relative;
+    width: 0px;
+    height: 0px;
+    bottom: 3px;
+}
+
+.sprite {
+    width: 140px;
+    position: absolute;
+    bottom: 0;
+    transition: transform 0.7s;
+}
+
+.sprite:hover {
+    cursor: pointer;
+}
+
+.sprite:active {
+    transform: rotate(1turn);
+}
+
+#poke_cell {
+    position: relative;
+    background-color: rgba(60, 60, 60, 0.598);
+    border: 1px solid rgba(60, 60, 60, 0.598);
+    border-radius: 30px;
+    margin-bottom: calc(15%/6);
+    transition: transform .25s, background-color .25s, margin-bottom .25s;
+    display: flex;
+    flex-direction: column;
+    flex: 1 2 300px;
+}
+
+#poke_cell:hover {
+    transform: scale(1.07);
+    margin-bottom: calc(10%/4);
+    background-color: rgb(60, 60, 60);
+}
+
+#pokemonlist {
+    padding-bottom: 1em;
+    margin-left: calc(15%/3);
+    margin-right: calc(10%/3);
+}
+
+.green_t {
+    border-color: rgb(55, 185, 107);
+}
+
+.red_t {
+    border-color: salmon;
+}
+
+.blue_t {
+    border-color: rgb(114, 150, 250);
+}
+
+.green_t th {
+    border: 1px solid rgb(55, 185, 107);
+}
+
+.green_t td {
+    border: 1px solid rgb(55, 185, 107);
+}
+
+.red_t th {
+    border: 1px solid salmon;
+}
+
+.red_t td {
+    border: 1px solid salmon;
+}
+
+.blue_t th {
+    border: 1px solid rgb(114, 150, 250);
+}
+
+.blue_t td {
+    border: 1px solid rgb(114, 150, 250);
+}
+
+table {
+    width: 100%;
+    height: 300px;
+    overflow: auto;
+    margin: 0 auto;
+    border-spacing: 0;
+    letter-spacing: 1px;
+    border-width: 4px;
+    border-style: solid;
+    display: block;
+}
+
+thead,
+tbody {
+    background-color: #555;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+thead {
+    background-color: #444;
+}
+
+tr:nth-of-type(even) {
+    background-color: #444;
+}
+
+tbody {
+    font-size: 0.8em;
+}
+
+th,
+td {
+    padding: 0.8em 1em;
+}
+
+th {
+    position: sticky;
+    top: 0;
+    background-color: #444;
+    vertical-align: bottom;
+}
+
+@media (max-width:770px) {
+    h1 {
+        font-size: 2.6em;
+        letter-spacing: 10px;
+        margin: calc(16%/2) calc(10%/.5);
+        padding: 2px;
+        background-size: 4.4em;
+    }
+
+    h2 {
+        font-size: 1.1em;
+    }
+
+    .sprite {
+        width: 100px;
+    }
+
+    p {
+        font-size: 0.9em
+    }
+
+    table {
+        display: block;
+        border-width: 2px;
+    }
+
+    #poke_cell {
+        margin-bottom: calc(25%/2);
+    }
+
+    details {
+        font-size: 0.9em;
+    }
+
+    #poke_cell:hover {
+        transform: scale(1);
+        margin-bottom: calc(15%/1.5);
+    }
+
+    button {
+        font-size: 1em;
+        padding: 0.4em 1.3em;
+    }
+
+    details:hover {
+        transform: translateY(0em);
+    }
+
+    .pokeball_icon {
+        width: 60px;
+        height: 60px;
+    }
+
+}
